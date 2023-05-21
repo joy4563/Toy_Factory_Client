@@ -4,11 +4,11 @@ const Container = ({ children }) => {
   return (
     <div
       className="
-        container
-        mx-auto
-        my-4
-        md:my-6
-        px-2
+        container 
+        mx-auto 
+        my-4 
+        md:my-6 
+        px-2 
         md:px-4
       "
     >
