@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 // import rootBg from '../assets/images/root-bg.jpg';
-import bg from '../assets/images/4680620.jpg';
+import bg from '../assets/images/main-bg.jpg';
 
 const RootLayout = () => {
   return (

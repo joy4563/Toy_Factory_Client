@@ -6,7 +6,7 @@ import CarouselSlide from './CarouselSlide';
 const Carousel = () => {
   return (
     <Container>
-      <div className="p-3 bg-white rounded-lg shadow-lg">
+      <div className="p-3 glass rounded-lg">
         <div className="carousel w-full">
           {carouselImages.map((image, idx, array) => {
             // if current = first, then prev = last

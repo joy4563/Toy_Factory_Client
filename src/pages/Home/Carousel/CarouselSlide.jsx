@@ -24,10 +24,10 @@ const CarouselSlide = ({ slide }) => {
           top-1/2
         "
       >
-        <a href={`#slide${slide.prev}`} className="btn btn-circle">
+        <a href={`#slide${slide.prev}`} className="btn btn-circle glass">
           ❮
         </a>
-        <a href={`#slide${slide.next}`} className="btn btn-circle">
+        <a href={`#slide${slide.next}`} className="btn btn-circle glass">
           ❯
         </a>
       </div>

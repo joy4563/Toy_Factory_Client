@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Navlink from './Navlink';
 import Container from '../Container';
@@ -10,9 +11,8 @@ const Navbar = () => {
     <Container>
       <div
         className="
-          bg-white
+          glass
           rounded-lg
-          shadow-lg
           flex
           justify-between
           content-center

@@ -2,7 +2,7 @@ import React from 'react';
 
 const GalleryImage = ({ image }) => {
   return (
-    <div className="bg-white p-2 rounded shadow">
+    <div className="glass p-2 rounded">
       <div className="overflow-hidden h-full">
         <img
           style={{ objectFit: 'cover' }}
