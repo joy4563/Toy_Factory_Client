@@ -10,7 +10,7 @@ const RootLayout = () => {
       className="
         bg-cover 
         bg-no-repeat 
-        bg-top 
+        bg-left-bottom 
         min-h-screen 
         w-full 
         overflow-x-hidden 
