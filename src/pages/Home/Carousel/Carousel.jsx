@@ -13,7 +13,7 @@ const Carousel = () => {
             const prev = idx ? idx : array.length;
             // if current = last then next = first
             const next = idx + 1 === array.length ? 1 : idx + 2;
-            return <CarouselSlide slide={{ ...image, prev, next }} />;
+            return <CarouselSlide key={image.id} slide={{ ...image, prev, next }} />;
           })}
         </div>
       </div>

@@ -20,7 +20,7 @@ const Gallery = () => {
         "
       >
         {galleryImages.map((image) => (
-          <GalleryImage image={image} />
+          <GalleryImage key={image.id} image={image} />
         ))}
       </div>
     </Container>

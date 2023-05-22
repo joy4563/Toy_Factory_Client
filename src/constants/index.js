@@ -13,8 +13,9 @@ import galleryImg6 from '../assets/images/gallery-6.jpg';
 
 export const navLinks = [
   { id: 1, text: 'Home', path: '/', auth: 'none' },
-  { id: 1, text: 'About', path: '/about', auth: 'none' },
-  { id: 1, text: 'Contact', path: '/contact', auth: 'none' }
+  { id: 2, text: 'About', path: '/about', auth: 'none' },
+  { id: 3, text: 'Contact', path: '/contact', auth: 'none' },
+  { id: 4, text: 'Login', path: '/login', auth: 'none' }
 ];
 
 export const carouselImages = [
