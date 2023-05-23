@@ -5,7 +5,7 @@ import { BiChevronRight } from 'react-icons/bi';
 
 const NotFound = () => {
   return (
-    <div className="flex justify-center items-center w-full h-screen">
+    <div className="flex justify-center items-center w-full h-screen bg-sky-50">
       <div>
         <div>
           <img src={notFoundBg} alt="" />
