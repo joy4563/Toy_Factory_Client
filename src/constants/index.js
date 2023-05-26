@@ -15,8 +15,8 @@ export const navLinks = [
   { id: 1, text: 'Home', path: '/', auth: 'none' },
   { id: 2, text: 'About', path: '/about', auth: 'none' },
   { id: 3, text: 'Contact', path: '/contact', auth: 'none' },
-  { id: 4, text: 'Login', path: '/login', auth: 'none' },
-  { id: 5, text: 'Signup', path: '/signup', auth: 'none' }
+  { id: 4, text: 'Login', path: '/login', auth: '!user' },
+  { id: 5, text: 'Signup', path: '/signup', auth: '!user' }
 ];
 
 export const carouselImages = [
@@ -32,4 +32,11 @@ export const galleryImages = [
   { id: 4, img: galleryImg4 },
   { id: 5, img: galleryImg5 },
   { id: 6, img: galleryImg6 }
+];
+
+export const tabList = [
+  { id: 1, title: 'Category-1' },
+  { id: 2, title: 'Category-2' },
+  { id: 3, title: 'Category-3' },
+  { id: 4, title: 'Category-4' }
 ];

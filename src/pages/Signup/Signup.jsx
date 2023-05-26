@@ -3,12 +3,25 @@ import Container from '../../components/Container';
 import GoogleLogo from '../../assets/images/google-logo.png';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import useAuth from '../../hooks/useAuth';
 
 const Signup = () => {
-  const { register, handleSubmit } = useForm();
+  const { loading, createUser, googleSignIn } = useAuth();
+
+  const { register, handleSubmit, reset } = useForm();
 
   const submitHandler = (data) => {
-    console.log(data);
+    try {
+      const { email, password, confirmPassword } = data;
+      if (password !== confirmPassword) return;
+      createUser(email, password).then((data) => {
+        if (data?.user) {
+          reset();
+        }
+      });
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 
   return (
@@ -52,9 +65,7 @@ const Signup = () => {
                     {...register('confirmPassword', { required: true, minLength: 6 })}
                   />
                 </div>
-                <div className="flex justify-center">
-                  <button className="btn mt-5 w-full">Submit</button>
-                </div>
+                <button className={`btn btn-block ${loading && 'loading'} mt-5`}>Submit</button>
                 <label className="label">
                   <span></span>
                   <span className="label-text text-base">
@@ -70,7 +81,10 @@ const Signup = () => {
 
             <div className="flex justify-center">
               {/* <div className="tooltip" data-tip="Google Signin"> */}
-              <div className="btn btn-circle btn-lg glass inline-block p-2 rounded-lg">
+              <div
+                onClick={googleSignIn}
+                className="btn btn-circle btn-lg glass inline-block p-2 rounded-lg"
+              >
                 <img className="inline-block" src={GoogleLogo} alt="google-logo" />
               </div>
               {/* </div> */}

@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Navlink from './Navlink';
@@ -5,8 +6,12 @@ import Container from '../Container';
 import pp from '../../assets/images/pp.jpg';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../../constants';
+import useAuth from '../../hooks/useAuth';
+import { FiLogOut } from 'react-icons/fi';
 
 const Navbar = () => {
+  const { user, logOut } = useAuth();
+
   return (
     <Container>
       <div
@@ -26,9 +31,17 @@ const Navbar = () => {
         </Link>
         <div>
           <ul className="flex justify-between content-center">
-            {navLinks.map((link) => (
-              <Navlink key={link.id} link={link} />
-            ))}
+            {navLinks.map((link) => {
+              if (link.auth === 'none') {
+                return <Navlink key={link.id} link={link} />;
+              }
+              if (link.auth === '!user' && !user) {
+                return <Navlink key={link.id} link={link} />;
+              }
+            })}
+            <button onClick={logOut} className="btn btn-sm btn-ghost my-3">
+              <FiLogOut />
+            </button>
             <div className="ml-8 py-1 dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
@@ -37,7 +50,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+                className="glass mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52 z-50"
               >
                 <li>
                   <a className="justify-between">

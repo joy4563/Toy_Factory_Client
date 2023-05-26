@@ -2,13 +2,12 @@ import React from 'react';
 import Container from '../Container';
 import GalleryImage from './GalleryImage';
 import { galleryImages } from '../../constants';
+import SectionTitle from '../SectionTitle';
 
 const Gallery = () => {
   return (
     <Container>
-      <div className="divider mt-12 mb-8">
-        <div className="text-center text-4xl font-semibold">Gallery</div>
-      </div>
+      <SectionTitle title="Gallery" />
       <div
         className="
           grid 
