@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Avengers Action Figure",
+        "name": "Iron Man",
+        "characterType": "Hero",
+        "rating": 4.8,
+        "price": 19.99,
+        "description": "Bring the high-tech hero Iron Man to life with this action figure! It features incredible detail and articulation, allowing you to recreate iconic battle scenes from the Avengers movies.",
+        "quality": "Premium",
+        "subCategory": "maleHero",
+        "img": "../src/assets/ironMan1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Avengers Plush Doll",
+        "name": "Captain America",
+        "characterType": "Hero",
+        "rating": 4.6,
+        "price": 14.99,
+        "description": "Cuddle up with the patriotic Avenger, Captain America! This soft plush doll is perfect for fans of all ages and makes a great addition to any Avengers collection.",
+        "quality": "Standard",
+        "subCategory": "maleHero",
+        "img": "../src/assets/cap1.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Avengers LEGO Set",
+        "name": "Thor's Hammer Battle",
+        "characterType": "Hero",
+        "rating": 4.9,
+        "price": 34.99,
+        "description": "Join Thor in an epic battle against villains with this thrilling LEGO set! Build Mjolnir and the battle arena to stage exciting adventures from the Marvel universe.",
+        "quality": "Deluxe",
+        "subCategory": "maleHero",
+        "img": "thors_hammer_lego.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Avengers Role-Play Set",
+        "name": "Black Widow's Batons",
+        "characterType": "Hero",
+        "rating": 4.7,
+        "price": 24.99,
+        "description": "Gear up and fight like Natasha Romanoff with these replica Black Widow batons! With realistic sound effects and comfortable grips, you'll feel like a true Avenger.",
+        "quality": "Premium",
+        "subCategory": "femaleHero",
+        "img": "black_widow_batons.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Avengers Vehicle",
+        "name": "Chitaru",
+        "characterType": "Hero",
+        "rating": 4.5,
+        "price": 39.99,
+        "description": "Get ready for aerial battles with the Chitaru! This detailed vehicle comes with launching missiles and a pilot figure to defend against evildoers.",
+        "quality": "Standard",
+        "subCategory": "villain",
+        "img": "quinjet_fighter.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Avengers Action Figure",
+        "name": "MODOK",
+        "characterType": "Villain",
+        "rating": 4.7,
+        "price": 24.99,
+        "description": "Unleash the malevolent power of MODOK, the super-intelligent and formidable villain! This action figure showcases his iconic floating head and advanced weaponry, allowing you to recreate epic showdowns with the Avengers.",
+        "quality": "Premium",
+        "subCategory": "villain",
+        "img": "modok_action_figure.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Avengers Backpack",
+        "name": "Spider-Man",
+        "characterType": "Hero",
+        "rating": 4.3,
+        "price": 19.99,
+        "description": "Swing into action with this Spider-Man backpack! With multiple compartments and comfortable straps, this backpack is perfect for school or everyday adventures.",
+        "quality": "Standard",
+        "subCategory": "maleHero",
+        "img": "spiderman_backpack.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Avengers Action Figure",
+        "name": "Thanos",
+        "characterType": "Villain",
+        "rating": 4.9,
+        "price": 39.99,
+        "description": "Bring the mighty Thanos to life with this highly detailed action figure! The Mad Titan comes with the Infinity Gauntlet and additional interchangeable hands for various poses. Create your own battles or recreate the epic Avengers: Endgame finale.",
+        "quality": "Deluxe",
+        "subCategory": "villain",
+        "img": "thanos_action_figure.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Avengers Costume",
+        "name": "Hulk",
+        "characterType": "Hero",
+        "rating": 4.7,
+        "price": 34.99,
+        "description": "Transform into the incredible Hulk with this detailed costume! Smash through any party or cosplay event as the strongest Avenger of all.",
+        "quality": "Deluxe",
+        "subCategory": "maleHero",
+        "img": "hulk_costume.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Avengers Action Figure",
+        "name": "Scarlet Witch",
+        "characterType": "Hero",
+        "rating": 4.6,
+        "price": 29.99,
+        "description": "Harness the reality-altering powers of Scarlet Witch with this action figure! With incredible attention to detail, the figure captures her mystical abilities and iconic red costume. Join her with other Avengers to defend the universe!",
+        "quality": "Premium",
+        "subCategory": "femaleHero",
+        "img": "scarlet_witch_action_figure.jpg"
+    }
+]
