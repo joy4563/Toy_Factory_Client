@@ -3,6 +3,7 @@ import Banner from './Banner';
 import Gallery from './Gallery';
 import NewArrival from './NewArrival';
 import AboutUs from './AboutUs';
+import Catagories from './Catagories';
 
 
 
@@ -13,6 +14,7 @@ const Home = () => {
             <Gallery></Gallery>
             <NewArrival></NewArrival>
             <AboutUs></AboutUs>
+            <Catagories></Catagories>
         </div>
     );
 };

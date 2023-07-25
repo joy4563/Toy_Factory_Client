@@ -1,10 +1,10 @@
 import person from "../../assets/groot1.jpg";
-import parts from "../../assets/groot1.jpg";
+import parts from "../../assets/ironMan3.jpg";
 
 const AboutUs = () => {
     return (
         <div className="max-w-7xl mx-auto mt-20" data-aos="zoom-in-up">
-            <h3 className="text-3xl text-orange-500 font-bold text-center mb-10">
+            <h3 className="mb-10 font-extrabold text-5xl text-center text-sky-500">
                 About us
             </h3>
             <div className="hero bg-base-200 p-10">
@@ -31,22 +31,20 @@ const AboutUs = () => {
                         data-aos-duration="800"
                     >
                         <h1 className="md:text-5xl text-3xl font-bold">
-                            We are qualified & of experience in this field
+                            Looking for something to proudly display in your
+                            collection? 
                         </h1>
-                        <p className="py-6 text-justify">
-                            Toy, plaything, usually for an infant or child, and
-                            often an instrument used in a game. Toys,
-                            playthings, and games survive from the most remote
-                            past and from a great variety of cultures. The ball,
-                            kite, and yo-yo are assumed to be the oldest objects
-                            specifically designed as toys.
+                        <p className="py-6 text-justify text-lg">
+                            At Avengers Assemble, we believe that every fan,
+                            both young and young-at-heart, deserves the chance
+                            to experience the thrill of joining Earth's
+                            Mightiest Heroes in their quest to protect the world
+                            from menacing villains and unimaginable threats.
+                            That's why we've curated a vast array of handpicked
+                            Avengers toys, ranging from action figures,
+                            playsets, and vehicles to collectibles and beyond.
                         </p>
-                        <p className="py-6 text-justify">
-                            Here we provide the latest toys with oldest one. We
-                            cordially welcome you and yours child in our toy
-                            shop. Hope you like it. If you have any doubt,
-                            please contact us.
-                        </p>
+
                         <button className="btn btn-warning">
                             Get More Info
                         </button>

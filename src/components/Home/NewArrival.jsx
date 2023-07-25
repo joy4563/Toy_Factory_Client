@@ -4,7 +4,7 @@ import img3 from "../../assets/groot2.jpg";
 import img4 from "../../assets/hulk1.jpg";
 import img5 from "../../assets/ironMan1.jpg";
 import img6 from "../../assets/thanos2.jpg";
-import img7 from "../../assets/groot2.jpg";
+import img7 from "../../assets/ironMan3.jpg";
 import img8 from "../../assets/chitaru.jpg";
 import img9 from "../../assets/modok.jpg";
 
