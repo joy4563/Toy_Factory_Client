@@ -33,7 +33,7 @@ const Catagories = () => {
         setFemaleHero(selectedfFemaleHero);
         setMaleHero(selectedMaleHero);
     }, [categories]);
-    console.log(femaleHero);
+    // console.log(femaleHero);
 
     return (
         <div className="max-w-7xl mx-auto mt-20" data-aos="zoom-in-up">

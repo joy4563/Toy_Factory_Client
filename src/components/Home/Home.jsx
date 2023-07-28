@@ -4,10 +4,12 @@ import Gallery from './Gallery';
 import NewArrival from './NewArrival';
 import AboutUs from './AboutUs';
 import Catagories from './Catagories';
+import setTitle from '../../Hook/TitleHook';
 
 
 
 const Home = () => {
+    setTitle("Home")
     return (
         <div >
             <Banner></Banner>

@@ -47,27 +47,3 @@ const Banner = () => {
 
 export default Banner;
 
-// import React from "react";
-// import bannerImg from "./../../assets/all_avengers.jpg";
-
-// const Banner = () => {
-//     return (
-//         <div className="bg-slate-300 py-4">
-//             {" "}
-//             <p className="text-lg font-semibold text-center px-2">
-                // Welcome to the Marvel Universe's ultimate destination for all
-                // Avengers fans and toy enthusiasts! Prepare to embark on an
-                // exhilarating journey as you delve into our extensive collection
-                // of Avengers toys that capture the very essence of heroism,
-                // camaraderie, and epic adventure.
-//             </p>
-//             <img
-//                 src={bannerImg}
-//                 alt=""
-//                 className="px-3 md:w-[70vw] h-[60vh] mx-auto rounded-xl"
-//             />
-//         </div>
-//     );
-// };
-
-// export default Banner;

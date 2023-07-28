@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { AuthContext } from "../providers/AuthProviders";
+import logo from '../assets/logo.jpg'
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
     const picture = user?.photoURL;
@@ -28,24 +29,29 @@ const Header = () => {
 
     return (
         <div className="mb-1">
-            <div className="flex justify-between  bg-primary text-primary-content px-5 md:px-16 py-3">
+            <div className="flex justify-between items-center content-center flex-col gap-3 md:flex-row  bg-primary text-primary-content px-5 md:px-16 py-3">
+                <div className="flex items-center">
+                    <p className="">
+                        <img
+                            src={logo}
+                            alt=""
+                            className="h-16 w-16 rounded-full p-1 bg-white"
+                        />
+                    </p>
+                    <p className="btn btn-ghost normal-case text-lg md:text-xl  hover:text-2xl text-yellow-200">
+                        Avengers Assemble
+                    </p>
+                </div>
                 <div className="">
-                    <div className="flex flex-col items-center md:flex-row ">
-                        <p className="btn btn-ghost normal-case text-lg md:text-xl  hover:text-2xl text-yellow-200">
-                            LOGO
-                        </p>
-                        <p className="btn btn-ghost normal-case text-lg md:text-xl  hover:text-2xl text-yellow-200">
-                            Avengers Assemble
-                        </p>
-
-                        <nav>
+                    <div className="  ">
+                        <nav className="flex flex-wrap items-center md:flex md:flex-row md:flex-nowrap">
                             {" "}
                             <NavLink
                                 to="/"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " px-4 py-3 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
-                                        : "normal-case mr-2 font-semibold text-lg"
+                                        ? " px-4 py-4 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
+                                        : "normal-case mr-2 font-semibold text-lg bg-sky-500 px-4 py-3 rounded-md  "
                                 }
                             >
                                 Home
@@ -54,8 +60,8 @@ const Header = () => {
                                 to="/allToys"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " px-4 py-3 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
-                                        : "normal-case mr-2 font-semibold text-lg"
+                                        ? " px-4 py-4 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold my-8"
+                                        : "normal-case mr-2 font-semibold text-lg bg-sky-500 px-4 py-3 rounded-md my-6"
                                 }
                             >
                                 All Toys
@@ -67,8 +73,8 @@ const Header = () => {
                                             to="/myToys"
                                             className={({ isActive }) =>
                                                 isActive
-                                                    ? " px-4 py-3 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
-                                                    : "normal-case mr-2 font-semibold text-lg"
+                                                    ? " px-4 py-4 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
+                                                    : "normal-case mr-2 font-semibold text-lg bg-sky-500 px-4 py-3 rounded-md my-6"
                                             }
                                         >
                                             My Toys
@@ -77,8 +83,8 @@ const Header = () => {
                                             to="/addToy"
                                             className={({ isActive }) =>
                                                 isActive
-                                                    ? " px-4 py-3 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
-                                                    : "normal-case mr-2 font-semibold text-lg "
+                                                    ? " px-4 py-4 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
+                                                    : "normal-case mr-2 font-semibold text-lg bg-sky-500 px-4 py-3 rounded-md  "
                                             }
                                         >
                                             Add a Toy
@@ -92,8 +98,8 @@ const Header = () => {
                                 to="/blogs"
                                 className={({ isActive }) =>
                                     isActive
-                                        ? " px-4 py-3 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
-                                        : "normal-case mr-2 font-semibold text-lg"
+                                        ? " px-4 py-4 rounded-md bg-green-500 normal-case text-xl mr-2 font-bold"
+                                        : "normal-case mr-2 font-semibold text-lg bg-sky-500 px-4 py-3 rounded-md my-6"
                                 }
                             >
                                 Blogs
