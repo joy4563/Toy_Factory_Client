@@ -11,6 +11,7 @@ import ErrorPage from "../components/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import AllToyDetails from "../components/AllToyDetails";
 import UpdateToy from "../components/UpdateToy";
+import CategoryDetails from "../components/CategoryDetails";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
+            },
+            {
+                path: "/:id",
+                element: <CategoryDetails></CategoryDetails>,
+                loader:({params})=>fetch('toys.json')
             },
             {
                 path: "/login",

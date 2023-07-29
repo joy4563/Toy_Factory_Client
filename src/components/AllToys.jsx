@@ -13,11 +13,11 @@ const AllToys = () => {
             .then((data) => setToys(data));
     }, []);
 
-    // const handleSearch = () => {
-    //     fetch(`https://toyzone-server.vercel.app/allUsers/${searchText}`)
-    //         .then((res) => res.json())
-    //         .then((data) => setToys(data));
-    // };
+    const handleSearch = () => {
+        fetch(`http://localhost:5000/searchToy/${searchText}`)
+            .then((res) => res.json())
+            .then((data) => setToys(data));
+    };
 
     return (
         <div className="max-w-7xl mx-auto mt-14">
@@ -31,7 +31,7 @@ const AllToys = () => {
                     type="text"
                 />
                 <button
-                    // onClick={handleSearch}
+                    onClick={handleSearch}
                     className="btn ml-5"
                 >
                     Search
