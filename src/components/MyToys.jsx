@@ -10,7 +10,7 @@ const MyToys = () => {
     setTitle("My Toy");
     const [toys, setToys] = useState([]);
     const { user } = useContext(AuthContext);
-    const url = `http://localhost:5000/myToys?email=${user?.email}`;
+    const url = `https://b7a11-toy-marketplace-server-side-joy4563-joy4563.vercel.app/myToys?email=${user?.email}`;
 
     useEffect(() => {
         fetch(url)
@@ -19,9 +19,12 @@ const MyToys = () => {
     }, [url]);
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/allToys/${id}`, {
-            method: "DELETE",
-        })
+        fetch(
+            `https://b7a11-toy-marketplace-server-side-joy4563-joy4563.vercel.app/allToys/${id}`,
+            {
+                method: "DELETE",
+            }
+        )
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
@@ -35,7 +38,7 @@ const MyToys = () => {
     };
 
     return (
-        <div className="overflow-x-auto w-full mt-10">
+        <div className="overflow-x-auto container mx-auto w-full mt-10">
             <table className="table w-full">
                 {/* head */}
                 <thead>

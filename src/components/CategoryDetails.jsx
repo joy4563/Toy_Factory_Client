@@ -9,7 +9,7 @@ const CategoryDetails = () => {
     // console.log(selectedId);
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mt-14 container mx-auto">
             <div>
                 <p className="font-bold text-4xl text-blue-600 mb-5">
                     {selectedId.title}
@@ -21,7 +21,7 @@ const CategoryDetails = () => {
                 <p className="font-bold">{selectedId.description}</p>
             </div>
             <div>
-                <img src={selectedId.img} alt="" className="rounded-lg"/>
+                <img src={selectedId.img} alt="" className="rounded-lg" />
             </div>
         </div>
     );

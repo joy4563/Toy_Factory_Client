@@ -8,7 +8,7 @@ const AllToyDetails = () => {
     setTitle(toyData.name);
     return (
         //
-        <div>
+        <div className="container mx-auto">
             <div className="flex flex-col items-center justify-center mt-20 bg-slate-600 p-5 rounded-lg">
                 <p className="text-xl font-bold">
                     Seller Name: {toyData.seller}

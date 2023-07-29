@@ -53,9 +53,9 @@ const AddToy = () => {
             });
     };
     return (
-        <div className=" p-24">
+        <div className="container mx-auto p-24">
             <h3 className="text-4xl font-bold text-center mb-16">
-                Add A <span className="text-orange-500">Toy</span>
+                Add A <span className="text-sky-500">Toy</span>
             </h3>
             <form onSubmit={handleAddToy}>
                 {/* form name and quantity row */}
@@ -90,8 +90,8 @@ const AddToy = () => {
                     </div>
                 </div>
                 {/* form seller name and email row */}
-                <div className="md:flex mb-8">
-                    <div className="form-control md:w-1/2">
+                <div className=" mb-8">
+                    <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Seller Name</span>
                         </label>
@@ -104,7 +104,6 @@ const AddToy = () => {
                             />
                         </label>
                     </div>
-                    
                 </div>
                 {/* form toy price and rating */}
                 <div className="md:flex mb-8">

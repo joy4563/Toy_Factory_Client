@@ -20,13 +20,16 @@ const UpdateToy = () => {
         console.log(quantity, price, details);
         const updatedUser = { quantity, price, details };
 
-        fetch(`http://localhost:5000/allToys/${userData._id}`, {
-            method: "PUT",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify(updatedUser),
-        })
+        fetch(
+            `https://b7a11-toy-marketplace-server-side-joy4563-joy4563.vercel.app/allToys/${userData._id}`,
+            {
+                method: "PUT",
+                headers: {
+                    "content-type": "application/json",
+                },
+                body: JSON.stringify(updatedUser),
+            }
+        )
             .then((res) => res.json())
             .then((data) => {
                 // console.log(data);
@@ -38,7 +41,7 @@ const UpdateToy = () => {
     };
 
     return (
-        <div className="max-w-7xl mx-auto mt-14">
+        <div className="max-w-7xl container mx-auto mt-14">
             <h2 className="font-bold text-center text-2xl">
                 UPDATE Your <span className="text-orange-500">Toy</span>{" "}
                 Information

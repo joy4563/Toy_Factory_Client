@@ -11,7 +11,7 @@ import setTitle from '../../Hook/TitleHook';
 const Home = () => {
     setTitle("Home")
     return (
-        <div >
+        <div className="container mx-auto">
             <Banner></Banner>
             <Gallery></Gallery>
             <NewArrival></NewArrival>

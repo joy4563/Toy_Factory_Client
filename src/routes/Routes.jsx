@@ -25,8 +25,13 @@ const router = createBrowserRouter([
             },
             {
                 path: "/:id",
-                element: <CategoryDetails></CategoryDetails>,
-                loader:({params})=>fetch('toys.json')
+                element: (
+                    <PrivateRoute>
+                        {" "}
+                        <CategoryDetails></CategoryDetails>
+                    </PrivateRoute>
+                ),
+                loader: ({ params }) => fetch("toys.json"),
             },
             {
                 path: "/login",
@@ -42,9 +47,15 @@ const router = createBrowserRouter([
             },
             {
                 path: "/allToys/:id",
-                element: <AllToyDetails></AllToyDetails>,
+                element: (
+                    <PrivateRoute>
+                        <AllToyDetails></AllToyDetails>
+                    </PrivateRoute>
+                ),
                 loader: ({ params }) =>
-                    fetch(`http://localhost:5000/allToys/${params.id}`),
+                    fetch(
+                        `https://b7a11-toy-marketplace-server-side-joy4563-joy4563.vercel.app/allToys/${params.id}`
+                    ),
             },
             {
                 path: "/myToys",
@@ -54,7 +65,9 @@ const router = createBrowserRouter([
                 path: "/myToys/:id",
                 element: <UpdateToy></UpdateToy>,
                 loader: ({ params }) =>
-                    fetch(`http://localhost:5000/allToys/${params.id}`),
+                    fetch(
+                        `https://b7a11-toy-marketplace-server-side-joy4563-joy4563.vercel.app/allToys/${params.id}`
+                    ),
             },
             {
                 path: "/addToy",

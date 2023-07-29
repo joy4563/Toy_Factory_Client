@@ -8,19 +8,23 @@ const AllToys = () => {
     const [toys, setToys] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/allToys")
+        fetch(
+            "https://b7a11-toy-marketplace-server-side-joy4563-joy4563.vercel.app/allToys"
+        )
             .then((res) => res.json())
             .then((data) => setToys(data));
     }, []);
 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/searchToy/${searchText}`)
+        fetch(
+            `https://b7a11-toy-marketplace-server-side-joy4563-joy4563.vercel.app/searchToy/${searchText}`
+        )
             .then((res) => res.json())
             .then((data) => setToys(data));
     };
 
     return (
-        <div className="max-w-7xl mx-auto mt-14">
+        <div className="max-w-7xl container mx-auto mt-14">
             <div className="p-2 text-center">
                 <input
                     onChange={(e) => {
@@ -30,10 +34,7 @@ const AllToys = () => {
                     placeholder="Enter Toy Name"
                     type="text"
                 />
-                <button
-                    onClick={handleSearch}
-                    className="btn ml-5"
-                >
+                <button onClick={handleSearch} className="btn ml-5">
                     Search
                 </button>
             </div>
